@@ -1,1 +1,1 @@
-#Algoritmo de Booth - Multiplicador con signo
+# Algoritmo de Booth - Multiplicador con signo
