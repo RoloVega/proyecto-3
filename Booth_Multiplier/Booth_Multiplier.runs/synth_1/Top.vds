@@ -1,0 +1,476 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Nov 15 02:59:35 2022
+# Process ID: 24184
+# Current directory: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.vds
+# Journal file: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24024 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 436.254 ; gain = 96.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'An0Decoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:12]
+WARNING: [Synth 8-151] case item 8'b00000000 is unreachable [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'An0Decoder' (1#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'An1Decoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:12]
+WARNING: [Synth 8-151] case item 8'b00000000 is unreachable [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'An1Decoder' (2#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'SignDecoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'SignDecoder' (3#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'Displays' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Displays.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'Cont' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Cont' (4#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FFT.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (5#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FFT.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Displays' (6#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Displays.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexor3to1' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplexor3to1.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexor3to1' (7#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplexor3to1.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier_Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FSM.sv:12]
+	Parameter T0 bound to: 3'b000 
+	Parameter T1 bound to: 3'b001 
+	Parameter T2 bound to: 3'b010 
+	Parameter T3 bound to: 3'b011 
+	Parameter T4 bound to: 3'b100 
+	Parameter T5 bound to: 3'b101 
+	Parameter T6 bound to: 3'b110 
+	Parameter T7 bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (8#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FSM.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'boothMultiplier' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'singleBitShiftRegister' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'singleBitShiftRegister' (9#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'foutBitAddSub' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'foutBitAddSub' (10#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'M_register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'M_register' (11#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'shiftRegister' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'shiftRegister' (12#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'LQ_Register' (13#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'boothMultiplier' (14#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (15#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier_Top' (16#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:13]
+WARNING: [Synth 8-689] width (4) of port connection 'DONE' does not match port width (1) of module 'Multiplier_Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'RefreshCounte500ms' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'RefreshCounte500ms' (17#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
+WARNING: [Synth 8-3848] Net XB in module/entity Top does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (18#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
+WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
+WARNING: [Synth 8-3917] design Top has port XA[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port XA[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port XA[1] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port XB[3]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[2]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[1]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 809.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'present_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AddSub" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Shift" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LoadAdd" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LoadA" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:20]
+INFO: [Synth 8-5544] ROM "Cout" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Q" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      T0 |                              000 |                              000
+                      T1 |                              001 |                              001
+                      T2 |                              010 |                              010
+                      T4 |                              011 |                              100
+                      T3 |                              100 |                              011
+                      T5 |                              101 |                              101
+                      T6 |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SignDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module Cont 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+Module FFT 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Multiplexor3to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+Module singleBitShiftRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module foutBitAddSub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module M_register 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module shiftRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module LQ_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module RefreshCounte500ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "RefreshCounte500ms/Q" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
+WARNING: [Synth 8-3917] design Top has port XA[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port XA[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port XA[1] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port XB[3]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[2]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[1]
+WARNING: [Synth 8-3331] design Top has unconnected port XB[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 809.426 ; gain = 469.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|An0Decoder  | out        | 256x7         | LUT            | 
+|An1Decoder  | out        | 256x7         | LUT            | 
+|Top         | Deco0/out  | 256x7         | LUT            | 
+|Top         | Deco1/out  | 256x7         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 814.492 ; gain = 474.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 814.715 ; gain = 474.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT2   |    23|
+|4     |LUT3   |    37|
+|5     |LUT4   |    19|
+|6     |LUT5   |    14|
+|7     |LUT6   |    57|
+|8     |FDCE   |    62|
+|9     |FDPE   |     5|
+|10    |IBUF   |    11|
+|11    |OBUF   |    15|
+|12    |OBUFT  |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------+------+
+|      |Instance             |Module                 |Cells |
++------+---------------------+-----------------------+------+
+|1     |top                  |                       |   259|
+|2     |  Deco0              |An0Decoder             |    21|
+|3     |  Deco1              |An1Decoder             |    13|
+|4     |  Displays           |Displays               |    67|
+|5     |    FFTN             |FFT                    |     1|
+|6     |    FFTX             |FFT_0                  |     1|
+|7     |    FFTY             |FFT_1                  |     1|
+|8     |    Refresh          |Cont                   |    64|
+|9     |  Multiplier_Top     |Multiplier_Top         |    61|
+|10    |    bm               |boothMultiplier        |    39|
+|11    |      HQ             |shiftRegister          |     9|
+|12    |      LQ             |LQ_Register            |    22|
+|13    |      M              |M_register             |     7|
+|14    |      Q11            |singleBitShiftRegister |     1|
+|15    |    con              |Counter                |     6|
+|16    |    fsm              |FSM                    |    16|
+|17    |  RefreshCounte500ms |RefreshCounte500ms     |    66|
++------+---------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 835.504 ; gain = 176.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 835.504 ; gain = 507.375
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 835.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 03:00:13 2022...

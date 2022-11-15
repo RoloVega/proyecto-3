@@ -1,0 +1,37 @@
+# compile verilog/system verilog design source files
+sv xilinx_vip  --include "H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/include" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+sv xil_defaultlib  --include "H:/Programming/Vivado/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../../An0Decoder.sv" \
+"../../../../../An1Decoder.sv" \
+"../../../../../Displays.sv" \
+"../../../../../FFT.sv" \
+"../../../../../FSM.sv" \
+"../../../../../LQ_Register.sv" \
+"../../../../../M_Register.sv" \
+"../../../../../Multiplexor3to1.sv" \
+"../../../../../Multiplier_Top.sv" \
+"../../../../../RefreshCounter.sv" \
+"../../../../../RefreshCounter500ms.sv" \
+"../../../../../SignDecoder.sv" \
+"../../../../../boothMultiplier.sv" \
+"../../../../../counter.sv" \
+"../../../../../fourBitAddSub.sv" \
+"../../../../../shiftReg.sv" \
+"../../../../../singleBitRegister.sv" \
+"../../../../../Top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
