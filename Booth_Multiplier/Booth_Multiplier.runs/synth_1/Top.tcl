@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,6 +42,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv
+  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv
   C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv

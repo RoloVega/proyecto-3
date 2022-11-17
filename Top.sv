@@ -18,11 +18,11 @@ module Top(clk, rst, boton, A, B, Y, Q1, Q2, Q3, Q4, XA,XB
 	 output wire Q1, Q2, Q3, Q4;
 	
 	 	 
- wire [6:0]A1, B1, C1 ; 
- wire  Q;
- wire [7:0] prod;
- assign Q4 = 1'b1;
-	 
+     wire [6:0]A1, B1, C1 ; 
+     wire  Q;
+     wire [7:0] prod;
+     assign Q4 = 1'b1;
+         
 	 
   An0Decoder Deco0(prod, A1);
  
@@ -34,7 +34,7 @@ module Top(clk, rst, boton, A, B, Y, Q1, Q2, Q3, Q4, XA,XB
  
   Multiplexor3to1 Multiplexor3to1(A1, B1, C1, {~Q3,~Q2,~Q1}, Y);
  
-  Multiplier_Top Multiplier_Top(clk, rst, Q, A, B, prod,XA,XB);
+  Multiplier_Top Multiplier_Top(clk, rst, Q, A, B,prod,XA,XB);
  
   RefreshCounte500ms RefreshCounte500ms(clk, rst, Q, boton);
  

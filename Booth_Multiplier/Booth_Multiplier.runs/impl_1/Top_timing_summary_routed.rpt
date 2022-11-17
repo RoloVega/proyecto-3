@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed Nov 16 22:07:10 2022
+| Date         : Thu Nov 17 06:50:42 2022
 | Host         : DESKTOP-JPOJ9U9 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Top_timing_summary_routed.rpt -pb Top_timing_summary_routed.pb -rpx Top_timing_summary_routed.rpx -warn_on_violation
 | Design       : Top
@@ -841,7 +841,7 @@ Slack (MET) :             0.275ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X63Y27         FDPE (Prop_fdpe_C_Q)         0.141     1.609 r  Displays/FFTN/Q_reg/Q
                          net (fo=4, routed)           0.180     1.790    Displays/Refresh/Q3_OBUF
-    SLICE_X63Y27         LUT5 (Prop_lut5_I4_O)        0.045     1.835 r  Displays/Refresh/Q_i_1__1/O
+    SLICE_X63Y27         LUT5 (Prop_lut5_I4_O)        0.045     1.835 r  Displays/Refresh/Q_i_1__0/O
                          net (fo=1, routed)           0.000     1.835    Displays/FFTN/Q_reg_1
     SLICE_X63Y27         FDPE                                         r  Displays/FFTN/Q_reg/D
   -------------------------------------------------------------------    -------------------
@@ -892,7 +892,7 @@ Slack (MET) :             0.325ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X63Y27         FDPE (Prop_fdpe_C_Q)         0.141     1.609 r  Displays/FFTY/Q_reg/Q
                          net (fo=3, routed)           0.231     1.840    Displays/Refresh/Q2_OBUF
-    SLICE_X63Y27         LUT5 (Prop_lut5_I4_O)        0.045     1.885 r  Displays/Refresh/Q_i_1__2/O
+    SLICE_X63Y27         LUT5 (Prop_lut5_I4_O)        0.045     1.885 r  Displays/Refresh/Q_i_1__1/O
                          net (fo=1, routed)           0.000     1.885    Displays/FFTY/Q_reg_0
     SLICE_X63Y27         FDPE                                         r  Displays/FFTY/Q_reg/D
   -------------------------------------------------------------------    -------------------
@@ -943,7 +943,7 @@ Slack (MET) :             0.340ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X63Y28         FDPE (Prop_fdpe_C_Q)         0.141     1.609 r  Displays/FFTX/Q_reg/Q
                          net (fo=3, routed)           0.246     1.855    Displays/Refresh/Q1_OBUF
-    SLICE_X63Y28         LUT5 (Prop_lut5_I4_O)        0.045     1.900 r  Displays/Refresh/Q_i_1__3/O
+    SLICE_X63Y28         LUT5 (Prop_lut5_I4_O)        0.045     1.900 r  Displays/Refresh/Q_i_1__2/O
                          net (fo=1, routed)           0.000     1.900    Displays/FFTX/Q_reg_0
     SLICE_X63Y28         FDPE                                         r  Displays/FFTX/Q_reg/D
   -------------------------------------------------------------------    -------------------
