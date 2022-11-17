@@ -2,12 +2,12 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Thu Nov 17 06:48:26 2022
-# Process ID: 16972
-# Current directory: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1
+# Start of session at: Thu Nov 17 07:18:15 2022
+# Process ID: 5524
+# Current directory: C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-# Log file: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.vds
-# Journal file: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1\vivado.jou
+# Log file: C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.vds
+# Journal file: C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top.tcl -notrace
 Command: synth_design -top Top -part xc7a35tcpg236-1
@@ -15,85 +15,74 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10284 
+INFO: Helper process launched with PID 1608 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 435.855 ; gain = 94.926
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 435.504 ; gain = 95.758
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'An0Decoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:12]
-WARNING: [Synth 8-151] case item 8'b00000000 is unreachable [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:19]
-INFO: [Synth 8-6155] done synthesizing module 'An0Decoder' (1#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'An1Decoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:12]
-WARNING: [Synth 8-151] case item 8'b00000000 is unreachable [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:19]
-INFO: [Synth 8-6155] done synthesizing module 'An1Decoder' (2#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'SignDecoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'SignDecoder' (3#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'Displays' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Displays.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'Cont' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'Cont' (4#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'FFT' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FFT.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'FFT' (5#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FFT.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'Displays' (6#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Displays.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'Multiplexor3to1' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplexor3to1.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'Multiplexor3to1' (7#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplexor3to1.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'Multiplier_Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FSM.sv:12]
-	Parameter T0 bound to: 3'b000 
-	Parameter T1 bound to: 3'b001 
-	Parameter T2 bound to: 3'b010 
-	Parameter T3 bound to: 3'b011 
-	Parameter T4 bound to: 3'b100 
-	Parameter T5 bound to: 3'b101 
-	Parameter T6 bound to: 3'b110 
-	Parameter T7 bound to: 3'b111 
-INFO: [Synth 8-6155] done synthesizing module 'FSM' (8#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FSM.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'boothMultiplier' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'singleBitShiftRegister' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'singleBitShiftRegister' (9#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'foutBitAddSub' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'foutBitAddSub' (10#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
-WARNING: [Synth 8-689] width (1) of port connection 'B' does not match port width (4) of module 'foutBitAddSub' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:32]
-INFO: [Synth 8-6157] synthesizing module 'M_register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'M_register' (11#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
-WARNING: [Synth 8-689] width (1) of port connection 'Data_out' does not match port width (4) of module 'M_register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:34]
-INFO: [Synth 8-6157] synthesizing module 'shiftRegister' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'shiftRegister' (12#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-INFO: [Synth 8-6157] synthesizing module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'LQ_Register' (13#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
-WARNING: [Synth 8-689] width (4) of port connection 'load' does not match port width (1) of module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-689] width (4) of port connection 'q' does not match port width (1) of module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-350] instance 'LQ' of module 'LQ_Register' requires 7 connections, but only 5 given [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3848] Net Y in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:22]
-WARNING: [Synth 8-3848] Net XA in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:17]
-WARNING: [Synth 8-3848] Net XB in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:17]
-INFO: [Synth 8-6155] done synthesizing module 'boothMultiplier' (14#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'Counter' (15#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
-INFO: [Synth 8-6157] synthesizing module 'bit8Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'bit8Register' (16#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:3]
-WARNING: [Synth 8-689] width (1) of port connection 'Data_in' does not match port width (8) of module 'bit8Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:28]
-WARNING: [Synth 8-3848] Net prod2 in module/entity Multiplier_Top does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'Multiplier_Top' (17#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'RefreshCounte500ms' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'RefreshCounte500ms' (18#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'Top' (19#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
-WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[3]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[2]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[1]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[3]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[2]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[1]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[0]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[3]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[2]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[1]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[3]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[2]
-WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[1]
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Top.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'Reading' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'antirrebote' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'clock_enable' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'clock_enable' (1#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'FF' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'FF' (2#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'antirrebote' (3#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'inicio_multiplicacion' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:109]
+	Parameter limite bound to: 499998 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'inicio_multiplicacion' (4#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:109]
+INFO: [Synth 8-6157] synthesizing module 'encender_lucesLED' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'encender_lucesLED' (5#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'Reading' (6#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'maquina_estados' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:47]
+	Parameter N bound to: 4'b1000 
+	Parameter Esperar bound to: 3'b000 
+	Parameter Inicio bound to: 3'b001 
+	Parameter Agregar bound to: 3'b010 
+	Parameter Sumar bound to: 3'b011 
+	Parameter Restar bound to: 3'b100 
+	Parameter Shift bound to: 3'b101 
+	Parameter Comprobar bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:130]
+INFO: [Synth 8-4471] merging register 'mult_control_reg[load_B]' into 'mult_control_reg[load_A]' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:125]
+WARNING: [Synth 8-6014] Unused sequential element mult_control_reg[load_B] was removed.  [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'maquina_estados' (7#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'mult_with_no_sm' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:180]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mult_with_no_sm' (8#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:180]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (9#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'binaryToBCD' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/binaryToBCD.sv:13]
+	Parameter Inactivo bound to: 3'b000 
+	Parameter Inicio bound to: 3'b001 
+	Parameter Agregar bound to: 3'b010 
+	Parameter Shift bound to: 3'b011 
+	Parameter Final bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/binaryToBCD.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'binaryToBCD' (10#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/binaryToBCD.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegmentDisplay' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/sevenSegmentDisplay.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ClockDivider.sv:13]
+	Parameter divisor bound to: 4999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (11#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ClockDivider.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'updateCounter' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/updateCounter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'updateCounter' (12#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/updateCounter.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'ControllerAnode' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerAnode.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'ControllerAnode' (13#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerAnode.sv:13]
+WARNING: [Synth 8-689] width (4) of port connection 'anodo' does not match port width (8) of module 'ControllerAnode' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/sevenSegmentDisplay.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'ControllerBCD' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerBCD.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'ControllerBCD' (14#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerBCD.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoCatode' [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/BCDtoCatode.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoCatode' (15#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/BCDtoCatode.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegmentDisplay' (16#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/sevenSegmentDisplay.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (17#1) [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Top.sv:13]
+WARNING: [Synth 8-3331] design ControllerBCD has unconnected port codigo_BCD[20]
+WARNING: [Synth 8-3331] design ControllerBCD has unconnected port codigo_BCD[19]
+WARNING: [Synth 8-3331] design ControllerBCD has unconnected port codigo_BCD[18]
+WARNING: [Synth 8-3331] design ControllerBCD has unconnected port codigo_BCD[17]
+WARNING: [Synth 8-3331] design ControllerBCD has unconnected port codigo_BCD[16]
+WARNING: [Synth 8-3331] design encender_lucesLED has unconnected port reset
+WARNING: [Synth 8-3331] design encender_lucesLED has unconnected port pb_salida
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 491.094 ; gain = 150.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.773 ; gain = 151.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -102,78 +91,108 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin Q11:q to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:30]
-WARNING: [Synth 8-3295] tying undriven pin LQ:q to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[3] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[2] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[1] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[0] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
-WARNING: [Synth 8-3295] tying undriven pin regsalida:Data_in[0] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:28]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 491.094 ; gain = 150.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.773 ; gain = 151.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 491.094 ; gain = 150.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.773 ; gain = 151.027
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
-Finished Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Parsing XDC File [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 822.371 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 826.621 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 822.371 ; gain = 481.441
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 822.371 ; gain = 481.441
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 822.371 ; gain = 481.441
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'present_reg' in module 'FSM'
-INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "AddSub" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "Shift" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "LoadAdd" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "LoadA" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:20]
-INFO: [Synth 8-5544] ROM "Cout" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "Q" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'maquina_estados'
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "iteraciones" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mult_control" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mult_control" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mult_control" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mult_control" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv:220]
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'binaryToBCD'
+INFO: [Synth 8-802] inferred FSM for state register 'agregar_contador_reg' in module 'binaryToBCD'
+INFO: [Synth 8-5544] ROM "sh_contador" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ocupado" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resultado" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "agregar_contador" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_dividido" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "catodo" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                      T0 |                              000 |                              000
-                      T1 |                              001 |                              001
-                      T2 |                              010 |                              010
-                      T4 |                              011 |                              100
-                      T3 |                              100 |                              011
-                      T5 |                              101 |                              101
-                      T6 |                              110 |                              110
+                 Esperar |                          0000001 |                              000
+                  Inicio |                          0000010 |                              001
+                 Agregar |                          0000100 |                              010
+                   Sumar |                          0001000 |                              011
+                  Restar |                          0010000 |                              100
+                   Shift |                          0100000 |                              101
+               Comprobar |                          1000000 |                              110
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'present_reg' using encoding 'sequential' in module 'FSM'
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'maquina_estados'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'agregar_contador_reg' using encoding 'sequential' in module 'binaryToBCD'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                Inactivo |                              000 |                              000
+                  Inicio |                              001 |                              001
+                 Agregar |                              010 |                              010
+                   Shift |                              011 |                              011
+                   Final |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'binaryToBCD'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 822.371 ; gain = 481.441
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,27 +205,48 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     25 Bit       Adders := 1     
-	   2 Input     19 Bit       Adders := 1     
-	   3 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               25 Bit    Registers := 1     
-	               19 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	               35 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 79    
 +---Muxes : 
-	   2 Input     25 Bit        Muxes := 1     
-	   2 Input     19 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
-	  13 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 7     
+	   5 Input     35 Bit        Muxes := 4     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   7 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -214,83 +254,118 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module SignDecoder 
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module clock_enable 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module inicio_multiplicacion 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module maquina_estados 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+Module mult_with_no_sm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module binaryToBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               35 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     35 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 7     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module updateCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module ControllerAnode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module ControllerBCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module BCDtoCatode 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      7 Bit        Muxes := 1     
-Module Cont 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     19 Bit       Adders := 1     
-+---Registers : 
-	               19 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     19 Bit        Muxes := 1     
-Module FFT 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module Multiplexor3to1 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   4 Input      7 Bit        Muxes := 1     
-Module FSM 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  13 Input      3 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 5     
-Module singleBitShiftRegister 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module foutBitAddSub 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input      4 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module M_register 
-Detailed RTL Component Info : 
-+---Registers : 
-	                4 Bit    Registers := 1     
-Module shiftRegister 
-Detailed RTL Component Info : 
-+---Registers : 
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 2     
-Module LQ_Register 
-Detailed RTL Component Info : 
-+---Registers : 
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module Counter 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-Module bit8Register 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-Module RefreshCounte500ms 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     25 Bit       Adders := 1     
-+---Registers : 
-	               25 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     25 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      7 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -307,70 +382,35 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "RefreshCounte500ms/Q" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
-WARNING: [Synth 8-3331] design Top has unconnected port XA[3]
-WARNING: [Synth 8-3331] design Top has unconnected port XA[2]
-WARNING: [Synth 8-3331] design Top has unconnected port XA[1]
-WARNING: [Synth 8-3331] design Top has unconnected port XA[0]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[3]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[2]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[1]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[0]
-WARNING: [Synth 8-3331] design Top has unconnected port B[3]
-WARNING: [Synth 8-3331] design Top has unconnected port B[2]
-WARNING: [Synth 8-3331] design Top has unconnected port B[1]
-INFO: [Synth 8-3886] merging instance 'Multiplier_Top/regsalida/Data_out_reg[2]' (FDCE) to 'Multiplier_Top/regsalida/Data_out_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Multiplier_Top/regsalida/Data_out_reg[3]' (FDCE) to 'Multiplier_Top/regsalida/Data_out_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Multiplier_Top/regsalida/Data_out_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[3]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[2]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[7]) is unused and will be removed from module Top.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'Multiplier_Top/regsalida/Data_out_reg[7]/Q' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[6]) is unused and will be removed from module Top.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'Multiplier_Top/regsalida/Data_out_reg[6]/Q' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[5]) is unused and will be removed from module Top.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'Multiplier_Top/regsalida/Data_out_reg[5]/Q' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[4]) is unused and will be removed from module Top.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'Multiplier_Top/regsalida/Data_out_reg[4]/Q' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv:11]
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[3]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[2]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[3]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[2]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[0]) is unused and will be removed from module Top.
+INFO: [Synth 8-5545] ROM "Lectura/A0/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A1/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A2/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A3/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A4/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A5/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A6/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/A7/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B0/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B1/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B2/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B3/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B4/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B5/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B6/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/B7/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Lectura/PB/u1/slow_clk_en" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design Top has port catodo[5] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (BCD/datos_BCD_reg[34]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (BCD/datos_BCD_reg[33]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (BCD/datos_BCD_reg[32]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (BCD/datos_BCD_reg[31]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (codigo_BCD_reg[20]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (codigo_BCD_reg[19]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (codigo_BCD_reg[18]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (codigo_BCD_reg[17]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (codigo_BCD_reg[16]) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 822.371 ; gain = 481.441
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-ROM:
-+------------+------------+---------------+----------------+
-|Module Name | RTL Object | Depth x Width | Implemented As | 
-+------------+------------+---------------+----------------+
-|An0Decoder  | out        | 256x7         | LUT            | 
-|An1Decoder  | out        | 256x7         | LUT            | 
-|Top         | Deco0/out  | 256x7         | LUT            | 
-|Top         | Deco1/out  | 256x7         | LUT            | 
-+------------+------------+---------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -382,13 +422,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 822.371 ; gain = 481.441
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 826.621 ; gain = 486.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 834.883 ; gain = 493.953
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,10 +439,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/regsalida/Data_out_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/Q11/Data_Out_reg) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -426,7 +464,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -439,7 +477,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -451,25 +489,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -486,54 +524,155 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    11|
-|3     |LUT1   |     1|
-|4     |LUT2   |    22|
-|5     |LUT3   |    27|
-|6     |LUT4   |    18|
-|7     |LUT5   |     8|
-|8     |LUT6   |     6|
-|9     |FDCE   |    49|
-|10    |FDPE   |     5|
-|11    |IBUF   |     3|
-|12    |OBUF   |    11|
-|13    |OBUFT  |     8|
+|2     |CARRY4 |   148|
+|3     |LUT1   |    39|
+|4     |LUT2   |    66|
+|5     |LUT3   |   125|
+|6     |LUT4   |    82|
+|7     |LUT5   |    86|
+|8     |LUT6   |   117|
+|9     |FDRE   |   699|
+|10    |FDSE   |     1|
+|11    |IBUF   |    19|
+|12    |OBUF   |    27|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------------------+-------------------+------+
-|      |Instance             |Module             |Cells |
-+------+---------------------+-------------------+------+
-|1     |top                  |                   |   170|
-|2     |  Displays           |Displays           |    69|
-|3     |    FFTN             |FFT                |     2|
-|4     |    FFTX             |FFT_0              |     2|
-|5     |    FFTY             |FFT_1              |     1|
-|6     |    Refresh          |Cont               |    64|
-|7     |  Multiplier_Top     |Multiplier_Top     |    12|
-|8     |    con              |Counter            |     6|
-|9     |    fsm              |FSM                |     6|
-|10    |  RefreshCounte500ms |RefreshCounte500ms |    66|
-+------+---------------------+-------------------+------+
++------+------------------+----------------------+------+
+|      |Instance          |Module                |Cells |
++------+------------------+----------------------+------+
+|1     |top               |                      |  1410|
+|2     |  BCD             |binaryToBCD           |   146|
+|3     |  Display         |sevenSegmentDisplay   |    89|
+|4     |    Contador      |updateCounter         |    22|
+|5     |    Divisor_Reloj |ClockDivider          |    67|
+|6     |  Lectura         |Reading               |   955|
+|7     |    A0            |antirrebote           |    52|
+|8     |      F0          |FF_94                 |     2|
+|9     |      F1          |FF_95                 |     3|
+|10    |      F2          |FF_96                 |     2|
+|11    |      F3          |FF_97                 |     1|
+|12    |      u1          |clock_enable_98       |    44|
+|13    |    A1            |antirrebote_0         |    52|
+|14    |      F0          |FF_89                 |     2|
+|15    |      F1          |FF_90                 |     3|
+|16    |      F2          |FF_91                 |     2|
+|17    |      F3          |FF_92                 |     1|
+|18    |      u1          |clock_enable_93       |    44|
+|19    |    A2            |antirrebote_1         |    52|
+|20    |      F0          |FF_84                 |     2|
+|21    |      F1          |FF_85                 |     3|
+|22    |      F2          |FF_86                 |     2|
+|23    |      F3          |FF_87                 |     1|
+|24    |      u1          |clock_enable_88       |    44|
+|25    |    A3            |antirrebote_2         |    52|
+|26    |      F0          |FF_79                 |     2|
+|27    |      F1          |FF_80                 |     3|
+|28    |      F2          |FF_81                 |     2|
+|29    |      F3          |FF_82                 |     1|
+|30    |      u1          |clock_enable_83       |    44|
+|31    |    A4            |antirrebote_3         |    52|
+|32    |      F0          |FF_74                 |     2|
+|33    |      F1          |FF_75                 |     3|
+|34    |      F2          |FF_76                 |     2|
+|35    |      F3          |FF_77                 |     1|
+|36    |      u1          |clock_enable_78       |    44|
+|37    |    A5            |antirrebote_4         |    52|
+|38    |      F0          |FF_69                 |     2|
+|39    |      F1          |FF_70                 |     3|
+|40    |      F2          |FF_71                 |     2|
+|41    |      F3          |FF_72                 |     1|
+|42    |      u1          |clock_enable_73       |    44|
+|43    |    A6            |antirrebote_5         |    52|
+|44    |      F0          |FF_64                 |     2|
+|45    |      F1          |FF_65                 |     3|
+|46    |      F2          |FF_66                 |     2|
+|47    |      F3          |FF_67                 |     1|
+|48    |      u1          |clock_enable_68       |    44|
+|49    |    A7            |antirrebote_6         |    52|
+|50    |      F0          |FF_59                 |     2|
+|51    |      F1          |FF_60                 |     3|
+|52    |      F2          |FF_61                 |     2|
+|53    |      F3          |FF_62                 |     1|
+|54    |      u1          |clock_enable_63       |    44|
+|55    |    B0            |antirrebote_7         |    52|
+|56    |      F0          |FF_54                 |     2|
+|57    |      F1          |FF_55                 |     3|
+|58    |      F2          |FF_56                 |     2|
+|59    |      F3          |FF_57                 |     1|
+|60    |      u1          |clock_enable_58       |    44|
+|61    |    B1            |antirrebote_8         |    52|
+|62    |      F0          |FF_49                 |     2|
+|63    |      F1          |FF_50                 |     3|
+|64    |      F2          |FF_51                 |     2|
+|65    |      F3          |FF_52                 |     1|
+|66    |      u1          |clock_enable_53       |    44|
+|67    |    B2            |antirrebote_9         |    52|
+|68    |      F0          |FF_44                 |     2|
+|69    |      F1          |FF_45                 |     3|
+|70    |      F2          |FF_46                 |     2|
+|71    |      F3          |FF_47                 |     1|
+|72    |      u1          |clock_enable_48       |    44|
+|73    |    B3            |antirrebote_10        |    52|
+|74    |      F0          |FF_39                 |     2|
+|75    |      F1          |FF_40                 |     3|
+|76    |      F2          |FF_41                 |     2|
+|77    |      F3          |FF_42                 |     1|
+|78    |      u1          |clock_enable_43       |    44|
+|79    |    B4            |antirrebote_11        |    52|
+|80    |      F0          |FF_34                 |     2|
+|81    |      F1          |FF_35                 |     3|
+|82    |      F2          |FF_36                 |     2|
+|83    |      F3          |FF_37                 |     1|
+|84    |      u1          |clock_enable_38       |    44|
+|85    |    B5            |antirrebote_12        |    52|
+|86    |      F0          |FF_29                 |     2|
+|87    |      F1          |FF_30                 |     3|
+|88    |      F2          |FF_31                 |     2|
+|89    |      F3          |FF_32                 |     1|
+|90    |      u1          |clock_enable_33       |    44|
+|91    |    B6            |antirrebote_13        |    52|
+|92    |      F0          |FF_24                 |     2|
+|93    |      F1          |FF_25                 |     3|
+|94    |      F2          |FF_26                 |     2|
+|95    |      F3          |FF_27                 |     1|
+|96    |      u1          |clock_enable_28       |    44|
+|97    |    B7            |antirrebote_14        |    52|
+|98    |      F0          |FF_19                 |     2|
+|99    |      F1          |FF_20                 |     3|
+|100   |      F2          |FF_21                 |     2|
+|101   |      F3          |FF_22                 |     1|
+|102   |      u1          |clock_enable_23       |    44|
+|103   |    Inicio        |inicio_multiplicacion |    71|
+|104   |    PB            |antirrebote_15        |    52|
+|105   |      F0          |FF                    |     3|
+|106   |      F1          |FF_16                 |     2|
+|107   |      F2          |FF_17                 |     2|
+|108   |      F3          |FF_18                 |     1|
+|109   |      u1          |clock_enable          |    44|
+|110   |  Multiplicacion  |Multiplier            |   124|
+|111   |    Booth         |mult_with_no_sm       |    88|
+|112   |    FSM           |maquina_estados       |    36|
++------+------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 872.754 ; gain = 533.008
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 12 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 835.688 ; gain = 163.480
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 835.688 ; gain = 494.758
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 872.754 ; gain = 197.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 872.754 ; gain = 533.008
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 65 Warnings, 12 Critical Warnings and 0 Errors encountered.
+97 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 837.324 ; gain = 509.289
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 872.754 ; gain = 544.984
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 837.324 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 06:49:13 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 872.754 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 07:19:07 2022...

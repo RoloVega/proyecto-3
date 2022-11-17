@@ -22,33 +22,24 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.cache/wt [current_project]
-set_property parent.project_path C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.cache/wt [current_project]
+set_property parent.project_path C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo c:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Booth_Multiplier.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An1Decoder.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Displays.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FFT.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/FSM.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplexor3to1.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/SignDecoder.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/bit8Register.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv
-  C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/BCDtoCatode.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ClockDivider.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerAnode.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/ControllerBCD.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Multiplier.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Reading.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/binaryToBCD.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/sevenSegmentDisplay.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/updateCounter.sv
+  C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Top.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -58,8 +49,8 @@ read_verilog -library xil_defaultlib -sv {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
+read_xdc C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/Jose/Desktop/Proyecto3/Booth_Multiplier/Constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

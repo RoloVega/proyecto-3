@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Thu Nov 17 06:50:17 2022
+| Date         : Thu Nov 17 07:20:24 2022
 | Host         : DESKTOP-JPOJ9U9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     1 |
-| Unused register locations in slices containing registers |     2 |
+| Number of unique control sets                            |    52 |
+| Unused register locations in slices containing registers |   260 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,7 +34,14 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|    16+ |            1 |
+|      1 |           17 |
+|      3 |            1 |
+|      4 |            6 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            3 |
+|     15 |            2 |
+|    16+ |           21 |
 +--------+--------------+
 
 
@@ -44,22 +51,73 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |              22 |            6 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |              70 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             496 |          135 |
+| Yes          | No                    | No                     |              48 |           29 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              86 |           28 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               | rst_IBUF         |                6 |             22 |
-+----------------+---------------+------------------+------------------+----------------+
++-------------------------------------+-------------------------------------------------+---------------------------------------+------------------+----------------+
+|             Clock Signal            |                  Enable Signal                  |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-------------------------------------+-------------------------------------------------+---------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B6/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/PB/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A3/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A4/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A5/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B5/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A6/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B3/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B4/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B2/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B1/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B0/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A7/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A2/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A1/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/A0/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/B7/u1/slow_clk_en                       |                                       |                1 |              1 |
+|  Display/Divisor_Reloj/clk_dividido |                                                 |                                       |                1 |              3 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/datos_BCD[30]_i_1_n_0                       |                                       |                4 |              4 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/sh_contador                                 | BCD/sh_contador[3]_i_1_n_0            |                1 |              4 |
+| ~CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/iteraciones                  |                                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/datos_BCD[18]_i_1_n_0                       |                                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/datos_BCD[26]_i_2_n_0                       | BCD/datos_BCD[26]_i_1_n_0             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/datos_BCD[22]_i_1_n_0                       |                                       |                1 |              4 |
+| ~CLK100MHZ_IBUF_BUFG                |                                                 |                                       |                1 |              5 |
+|  CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/FSM_onehot_estado[6]_i_1_n_0 | reset_IBUF                            |                2 |              7 |
+|  CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/shift_reg[16][0]             | reset_IBUF                            |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/shift_reg[16][1]             | reset_IBUF                            |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/E[0]                         | reset_IBUF                            |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG                | Multiplicacion/FSM/bin_reg[0]_0                 | Multiplicacion/FSM/bin_reg[14]        |                4 |             15 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/datos_BCD[14]_i_1_n_0                       |                                       |                5 |             15 |
+|  CLK100MHZ_IBUF_BUFG                | Lectura/Inicio/B_sinrebote                      | Lectura/Inicio/B_sinrebote_reg[7]     |                7 |             16 |
+|  CLK100MHZ_IBUF_BUFG                | BCD/codigo_BCD_reg[0]                           | BCD/codigo_BCD_reg[15]                |                5 |             16 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A7/u1/contador[0]_i_1__6_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A3/u1/contador[0]_i_1__2_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A4/u1/contador[0]_i_1__3_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A5/u1/contador[0]_i_1__4_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B4/u1/contador[0]_i_1__11_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B5/u1/contador[0]_i_1__12_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B6/u1/contador[0]_i_1__13_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B0/u1/contador[0]_i_1__7_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B3/u1/contador[0]_i_1__10_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A2/u1/contador[0]_i_1__1_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A1/u1/contador[0]_i_1__0_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A0/u1/contador[0]_i_1_n_0     |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/PB/u1/contador[0]_i_1__15_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B7/u1/contador[0]_i_1__14_n_0 |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/A6/u1/contador[0]_i_1__5_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B2/u1/contador[0]_i_1__9_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | Lectura/B1/u1/contador[0]_i_1__8_n_0  |                7 |             26 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 | reset_IBUF                            |               16 |             54 |
+|  CLK100MHZ_IBUF_BUFG                |                                                 |                                       |               23 |             62 |
++-------------------------------------+-------------------------------------------------+---------------------------------------+------------------+----------------+
 
 
