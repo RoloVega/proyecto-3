@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Tue Nov 15 03:00:51 2022
+| Date         : Wed Nov 16 22:06:43 2022
 | Host         : DESKTOP-JPOJ9U9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     5 |
-| Unused register locations in slices containing registers |    21 |
+| Number of unique control sets                            |     1 |
+| Unused register locations in slices containing registers |     2 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            2 |
-|      5 |            1 |
-|    16+ |            2 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -47,10 +45,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |              34 |           14 |
+| No           | No                    | Yes                    |              22 |            6 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              33 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -58,14 +56,10 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------------+-----------------------------------+------------------+----------------+
-|  Clock Signal  |             Enable Signal             |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------+---------------------------------------+-----------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | Multiplier_Top/fsm/Data_out_reg[0][0] | rst_IBUF                          |                1 |              4 |
-|  clk_IBUF_BUFG | Multiplier_Top/fsm/E[0]               | rst_IBUF                          |                1 |              4 |
-|  clk_IBUF_BUFG |                                       | Multiplier_Top/fsm/Data_Out_reg_0 |                3 |              5 |
-|  clk_IBUF_BUFG | RefreshCounte500ms/Cout               | rst_IBUF                          |                7 |             25 |
-|  clk_IBUF_BUFG |                                       | rst_IBUF                          |               11 |             29 |
-+----------------+---------------------------------------+-----------------------------------+------------------+----------------+
++----------------+---------------+------------------+------------------+----------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+---------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |               | rst_IBUF         |                6 |             22 |
++----------------+---------------+------------------+------------------+----------------+
 
 

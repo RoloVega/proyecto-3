@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Tue Nov 15 02:59:35 2022
-# Process ID: 24184
+# Start of session at: Wed Nov 16 22:05:06 2022
+# Process ID: 23752
 # Current directory: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24024 
+INFO: Helper process launched with PID 23256 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 436.254 ; gain = 96.215
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 435.035 ; gain = 94.715
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'An0Decoder' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/An0Decoder.sv:12]
@@ -52,31 +52,54 @@ INFO: [Synth 8-6157] synthesizing module 'singleBitShiftRegister' [C:/Users/Jose
 INFO: [Synth 8-6155] done synthesizing module 'singleBitShiftRegister' (9#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/singleBitRegister.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'foutBitAddSub' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'foutBitAddSub' (10#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/fourBitAddSub.sv:12]
+WARNING: [Synth 8-689] width (1) of port connection 'B' does not match port width (4) of module 'foutBitAddSub' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:32]
 INFO: [Synth 8-6157] synthesizing module 'M_register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'M_register' (11#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/M_Register.sv:12]
+WARNING: [Synth 8-689] width (1) of port connection 'Data_out' does not match port width (4) of module 'M_register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:34]
 INFO: [Synth 8-6157] synthesizing module 'shiftRegister' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'shiftRegister' (12#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/shiftReg.sv:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
 INFO: [Synth 8-6157] synthesizing module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'LQ_Register' (13#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/LQ_Register.sv:12]
+WARNING: [Synth 8-689] width (4) of port connection 'load' does not match port width (1) of module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-689] width (4) of port connection 'q' does not match port width (1) of module 'LQ_Register' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-350] instance 'LQ' of module 'LQ_Register' requires 7 connections, but only 5 given [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-3848] Net Y in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:22]
+WARNING: [Synth 8-3848] Net XA in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:17]
+WARNING: [Synth 8-3848] Net XB in module/entity boothMultiplier does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:17]
 INFO: [Synth 8-6155] done synthesizing module 'boothMultiplier' (14#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:12]
+WARNING: [Synth 8-689] width (1) of port connection 'prod' does not match port width (8) of module 'boothMultiplier' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:24]
 INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'Counter' (15#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/counter.sv:12]
+WARNING: [Synth 8-3848] Net prod in module/entity Multiplier_Top does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:18]
 INFO: [Synth 8-6155] done synthesizing module 'Multiplier_Top' (16#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Multiplier_Top.sv:13]
-WARNING: [Synth 8-689] width (4) of port connection 'DONE' does not match port width (1) of module 'Multiplier_Top' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:37]
 INFO: [Synth 8-6157] synthesizing module 'RefreshCounte500ms' [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
 INFO: [Synth 8-6155] done synthesizing module 'RefreshCounte500ms' (17#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/RefreshCounter500ms.sv:12]
-WARNING: [Synth 8-3848] Net XB in module/entity Top does not have driver. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:16]
 INFO: [Synth 8-6155] done synthesizing module 'Top' (18#1) [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Top.sv:12]
 WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
-WARNING: [Synth 8-3917] design Top has port XA[3] driven by constant 0
-WARNING: [Synth 8-3917] design Top has port XA[2] driven by constant 0
-WARNING: [Synth 8-3917] design Top has port XA[1] driven by constant 0
-WARNING: [Synth 8-3331] design Top has unconnected port XB[3]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[2]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[1]
-WARNING: [Synth 8-3331] design Top has unconnected port XB[0]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[3]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[2]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port prod[1]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[3]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[2]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[1]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XA[0]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[3]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[2]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port XB[1]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[3]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[2]
+WARNING: [Synth 8-3331] design boothMultiplier has unconnected port B[1]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[7]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[6]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[5]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[4]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[3]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[2]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[1]
+WARNING: [Synth 8-3331] design Multiplier_Top has unconnected port prod[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.355 ; gain = 150.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -85,14 +108,20 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Q11:q to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:30]
+WARNING: [Synth 8-3295] tying undriven pin LQ:q to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[3] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[2] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[1] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
+WARNING: [Synth 8-3295] tying undriven pin LQ:Data_In[0] to constant 0 [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/boothMultiplier.sv:38]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.355 ; gain = 150.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.684 ; gain = 150.645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 490.355 ; gain = 150.035
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -100,28 +129,78 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 809.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 821.324 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'present_reg' in module 'FSM'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -147,7 +226,7 @@ INFO: [Synth 8-5546] ROM "Q" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_reg' using encoding 'sequential' in module 'FSM'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 809.426 ; gain = 469.387
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -278,15 +357,31 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5546] ROM "RefreshCounte500ms/Q" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design Top has port Q4 driven by constant 1
-WARNING: [Synth 8-3917] design Top has port XA[3] driven by constant 0
-WARNING: [Synth 8-3917] design Top has port XA[2] driven by constant 0
-WARNING: [Synth 8-3917] design Top has port XA[1] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port XA[3]
+WARNING: [Synth 8-3331] design Top has unconnected port XA[2]
+WARNING: [Synth 8-3331] design Top has unconnected port XA[1]
+WARNING: [Synth 8-3331] design Top has unconnected port XA[0]
 WARNING: [Synth 8-3331] design Top has unconnected port XB[3]
 WARNING: [Synth 8-3331] design Top has unconnected port XB[2]
 WARNING: [Synth 8-3331] design Top has unconnected port XB[1]
 WARNING: [Synth 8-3331] design Top has unconnected port XB[0]
+WARNING: [Synth 8-3331] design Top has unconnected port B[3]
+WARNING: [Synth 8-3331] design Top has unconnected port B[2]
+WARNING: [Synth 8-3331] design Top has unconnected port B[1]
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[3]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/HQ/Data_Out_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[3]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/M/Data_out_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[3]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/LQ/Data_Out_reg[0]) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 809.426 ; gain = 469.387
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -315,13 +410,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 814.492 ; gain = 474.453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 821.324 ; gain = 481.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 814.715 ; gain = 474.676
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 832.355 ; gain = 492.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,8 +427,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Multiplier_Top/mb/Q11/Data_Out_reg) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -357,7 +453,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -370,7 +466,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -382,25 +478,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -417,49 +513,43 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    11|
-|3     |LUT2   |    23|
-|4     |LUT3   |    37|
-|5     |LUT4   |    19|
-|6     |LUT5   |    14|
-|7     |LUT6   |    57|
-|8     |FDCE   |    62|
-|9     |FDPE   |     5|
-|10    |IBUF   |    11|
-|11    |OBUF   |    15|
-|12    |OBUFT  |     4|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT2   |    20|
+|5     |LUT3   |     2|
+|6     |LUT4   |    16|
+|7     |LUT5   |    37|
+|8     |LUT6   |     5|
+|9     |FDCE   |    49|
+|10    |FDPE   |     5|
+|11    |IBUF   |     3|
+|12    |OBUF   |    11|
+|13    |OBUFT  |     8|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------------------+-----------------------+------+
-|      |Instance             |Module                 |Cells |
-+------+---------------------+-----------------------+------+
-|1     |top                  |                       |   259|
-|2     |  Deco0              |An0Decoder             |    21|
-|3     |  Deco1              |An1Decoder             |    13|
-|4     |  Displays           |Displays               |    67|
-|5     |    FFTN             |FFT                    |     1|
-|6     |    FFTX             |FFT_0                  |     1|
-|7     |    FFTY             |FFT_1                  |     1|
-|8     |    Refresh          |Cont                   |    64|
-|9     |  Multiplier_Top     |Multiplier_Top         |    61|
-|10    |    bm               |boothMultiplier        |    39|
-|11    |      HQ             |shiftRegister          |     9|
-|12    |      LQ             |LQ_Register            |    22|
-|13    |      M              |M_register             |     7|
-|14    |      Q11            |singleBitShiftRegister |     1|
-|15    |    con              |Counter                |     6|
-|16    |    fsm              |FSM                    |    16|
-|17    |  RefreshCounte500ms |RefreshCounte500ms     |    66|
-+------+---------------------+-----------------------+------+
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |   171|
+|2     |  Displays           |Displays           |    69|
+|3     |    FFTN             |FFT                |     2|
+|4     |    FFTX             |FFT_0              |     2|
+|5     |    FFTY             |FFT_1              |     1|
+|6     |    Refresh          |Cont               |    64|
+|7     |  Multiplier_Top     |Multiplier_Top     |    12|
+|8     |    con              |Counter            |     6|
+|9     |    fsm              |FSM                |     6|
+|10    |  RefreshCounte500ms |RefreshCounte500ms |    67|
++------+---------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 835.504 ; gain = 176.723
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 835.504 ; gain = 495.465
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 833.145 ; gain = 161.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 833.145 ; gain = 492.824
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -467,10 +557,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-60 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+61 Infos, 82 Warnings, 16 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 835.504 ; gain = 507.375
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 833.586 ; gain = 505.383
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jose/Desktop/DLProyecto3/proyecto-3/Booth_Multiplier/Booth_Multiplier.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 835.504 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 03:00:13 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 833.586 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 16 22:05:53 2022...

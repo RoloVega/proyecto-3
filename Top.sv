@@ -34,7 +34,7 @@ module Top(clk, rst, boton, A, B, Y, Q1, Q2, Q3, Q4, XA,XB
  
   Multiplexor3to1 Multiplexor3to1(A1, B1, C1, {~Q3,~Q2,~Q1}, Y);
  
-  Multiplier_Top Multiplier_Top(clk, rst, Q, A, B, prod,XA);
+  Multiplier_Top Multiplier_Top(clk, rst, Q, A, B, prod,XA,XB);
  
   RefreshCounte500ms RefreshCounte500ms(clk, rst, Q, boton);
  

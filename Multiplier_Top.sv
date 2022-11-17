@@ -10,20 +10,24 @@
 // Module Name: Multiplier_Top
 //////////////////////////////////////////////////////////////////////////////////
 
-module Multiplier_Top(clk, rst, valid, A, B, prod, DONE);
+module Multiplier_Top(clk, rst, valid, A, B, prod, XA, XB);
 	 
 	 input wire clk, rst, valid;
 	 input wire [3:0] A, B;
+	 output wire [3:0] XA, XB;
 	 output [7:0] prod;
-	 output DONE;
 	 
-	 wire LoadA, LoadB, LoadAdd, Shift, AddSub, Q0, Q1, enable, press, rs, Count;
+	 wire LoadA, LoadB, LoadAdd, Shift, AddSub, W, Q1, enable, press, rs, Count, DONE;
 	 
-	 FSM fsm(clk, rst, valid, Count, Q0, Q1, LoadA, LoadB, LoadAdd, Shift, AddSub, DONE, press, enable, rs);
+	 FSM fsm(clk, rst, valid, Count, W, Q1, LoadA, LoadB, LoadAdd, Shift, AddSub, DONE, press, enable, rs);
 	 
-	 boothMultiplier bm(clk, rst, LoadA, LoadB, LoadAdd, Shift, A, B, AddSub, Q0, Q1, prod, rs);
+	 boothMultiplier mb(clk, rst, LoadA, LoadB, LoadAdd, Shift, A, B, AddSub, W, Q1, prod2, rs, XA, XB);
 	 
-	 Counter con(clk, rst, press, enable, Count);
+     Counter con(clk, rst, press, enable, Count);
+
+	 //bit8Register regsalida(clk, rst, DONE, prod2, prod);
+	 
+	 
 
 
 
