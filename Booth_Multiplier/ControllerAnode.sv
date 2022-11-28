@@ -26,8 +26,8 @@ module ControllerAnode(
                     anodo = 8'b11111011; //Encender dígito 3 (centenas).
                 3'b011:
                     anodo = 8'b11110111; //Encender dígito 4 (unidades de mil).
-                default:
-                    anodo = 8'b11111110; //Encender dígito 1 (unidades).
+                //default:
+                    //anodo = 8'b11111110; //Encender dígito 1 (unidades).
             endcase
         end
     

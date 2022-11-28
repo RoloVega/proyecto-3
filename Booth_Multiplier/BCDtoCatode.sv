@@ -28,8 +28,8 @@ module BCDtoCatode(
                     catodo = 7'b0000110; //3 decimal.
                 4'b0100:
                     catodo = 7'b1001100; //4 decimal.
-                default:
-                    catodo = 7'b0000001; //0 decimal.
+                //default:
+                    //catodo = 7'b0000001; //0 decimal.
             endcase
         end
     

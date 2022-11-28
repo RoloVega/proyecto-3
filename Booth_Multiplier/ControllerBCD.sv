@@ -27,8 +27,8 @@ module ControllerBCD(
                 digito = codigo_BCD [11:8]; //Dígito que se muestra en el tercer dígito (centenas).
             3'b011: 
                 digito = codigo_BCD [15:12]; //Dígito que se muestra en el cuarto dígito (unidades de mil).
-            default:
-                digito = codigo_BCD [3:0]; //Dígito que se muestra en el primer dígito (unidades).
+            //default:
+                //digito = codigo_BCD [3:0]; //Dígito que se muestra en el primer dígito (unidades).
             endcase
         end
     
